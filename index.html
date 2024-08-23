@@ -9,7 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-
+    <!-- Font Awesome CDN -->
+    <script src="https://kit.fontawesome.com/e33ac630af.js" crossorigin="anonymous"></script>
     <!-- Tailwind CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
 
@@ -23,6 +24,7 @@
             extend: {
               colors: {
                 clifford: '#da373d',
+                'btn-bg': '#ABEF5F',
               }
             }
           }
@@ -42,7 +44,49 @@
 </head>
 <body class="manrope-font">
     <!-- Header Section -->
-    <header></header>
+<header class="container mx-auto">
+        <!-- Navbar -->
+         <nav>
+            <div class="navbar flex justify-between">
+                <!-- Small Nav -->
+                <div>
+                  <a class="btn btn-ghost text-3xl font-bold"><i class="fa-solid fa-arrow-right py-1 px-1.5 bg-btn-bg rounded-full -rotate-45"></i>Rinterio</a>
+                </div>
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn lg:hidden">
+                        <i class="fa-solid fa-bars px-1.5 bg-white rounded-full border border-[#E9E9E9] text-2xl"></i>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="cursor-context-menu dropdown-content z-[1]">
+                      <li><a>Home</a></li>
+                      <li><a>Services</a></li>
+                      <li><a>Portfolio</a></li>
+                      <li><a>Blogs</a></li>
+                      <li><a>Contact Us</a></li>
+                    </ul>
+                  </div>
+                <!-- Large Nav -->
+                <div class="hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li class="font-bold"><a>Home</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Portfolio</a></li>
+                    <li><a>Blogs</a></li>
+                    <li><a>Contact Us</a></li>
+                  </ul>
+                </div>
+                <div class="hidden lg:block">
+                    <a href="facebook.com">
+                        <i class="fa-solid fa-magnifying-glass p-1 bg-white rounded-full border border-[#E9E9E9] mr-4"></i></a>
+                    <a href="youtube.com"><i class="fa-solid fa-cart-shopping p-1 bg-white rounded-full border border-[#E9E9E9] mr-4"></i></a>
+                  <a class="btn bg-btn-bg rounded-3xl">Book Consult <i class="fa-solid fa-arrow-right py-1 px-1.5 bg-black text-white rounded-full -rotate-45"></i></a>
+                </div>
+              </div>
+         </nav>
+        <!-- Banner -->
+         <div></div>
+    </header>
     <!-- Main Section -->
      <main>
         <!-- About Us Section -->
