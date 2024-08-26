@@ -45,7 +45,7 @@
 </head>
 <body class="manrope-font">
     <!-- Header Section -->
-<header class="bg-gradient-to-b from-slate-100 to-slate-50 pb-10">
+<header class="bg-gradient-to-b from-slate-100 to-slate-50 pt-10 pb-10">
         <div class="container mx-auto">
             <!-- Navbar -->
          <nav>
@@ -71,11 +71,11 @@
               <!-- Large Nav -->
               <div class="hidden lg:flex">
                 <ul class="menu menu-horizontal px-1">
-                  <li class="font-bold"><a>Home</a></li>
-                  <li><a>Services</a></li>
-                  <li><a>Portfolio</a></li>
-                  <li><a>Blogs</a></li>
-                  <li><a>Contact Us</a></li>
+                  <li class="font-bold text-xl"><a>Home</a></li>
+                  <li><a class="text-[#737373] text-xl">Services</a></li>
+                  <li><a class="text-[#737373] text-xl">Portfolio</a></li>
+                  <li><a class="text-[#737373] text-xl">Blogs</a></li>
+                  <li><a class="text-[#737373] text-xl">Contact Us</a></li>
                 </ul>
               </div>
               <div class="hidden lg:block">
@@ -348,20 +348,44 @@
             </div>
         </section>
         <!-- Let’s Discuss Section -->
-        <section class="bg-[url(./images/bg.jpg)] bg-repeat-round h-96 mt-1">
+        <section class="bg-[url(./images/bg.jpg)] bg-repeat-round h-fit mt-1">
+            <div class="container mx-auto flex flex-col items-center pb-10">
+              <button class="btn bg-btn-bg-2 w-64 rounded-3xl mt-10 inline border-0"><i class="fa-solid fa-arrow-right pl-2"></i> Let’s Connect</button>
+              <h3 class="text-4xl font-bold text-center pt-2 pb-5">Let’s Discuss Next Project</h3>
+              <p class="w-3/5 text-center pb-5">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
 
+              <form class="flex flex-col gap-3">
+                <div class="flex gap-5">
+                  <input type="text" placeholder="First Name*" class="input text-sm font-light w-full max-w-sm input-bordered rounded-3xl" />
+                  <input type="text" placeholder="Last Name*" class="input text-sm font-light w-full max-w-sm input-bordered rounded-3xl" />
+                </div>
+                <div class="flex gap-5">
+                  <input type="text" placeholder="Phone Number*" class="input text-sm font-light w-full max-w-sm input-bordered rounded-3xl" />
+                  <input type="text" placeholder="Email Number*" class="input text-sm font-light w-full max-w-sm input-bordered rounded-3xl" />
+                </div>
 
-          <input
-          type="text"
-          placeholder="Type here"
-          class="input input-bordered input-secondary w-full max-w-xs" />
-
-          
+                <input type="text" placeholder="Write your message here" class="input text-sm font-light pb-28 pt-5 overflow-scroll w-2xl rounded-3xl "/>
+                <button class="btn bg-btn-bg rounded-3xl w-full">View Details<i class="fa-solid fa-arrow-right p-2 bg-black text-white rounded-full -rotate-45"></i></button>
+              </form>
+            </div>
         </section>
-         </div>
      </main>
 
     <!-- Footer Section -->
-    <footer></footer>
+    <footer class="bg-[#1C1C1C] w-full">
+    <div class="container mx-auto flex flex-col items-center py-10 px-10">
+      <a class="btn btn-ghost text-3xl font-bold text-white"><i class="fa-solid fa-arrow-right py-2 px-2.5 bg-btn-bg rounded-full -rotate-45 text-black"></i>Rinterio</a>
+      <p class="text-center w-full max-w-screen-md text-[#737373] pb-5">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+      
+      <ul class="flex gap-10 text-[#737373] py-5">
+        <li>Home</li>
+        <li>Services</li>
+        <li>Portfolio</li>
+        <li>Blogs</li>
+        <li>Contact Us</li>
+      </ul>
+      <a class="btn bg-btn-bg max-w-40 rounded-3xl border-0">Book Consult <i class="fa-solid fa-arrow-right p-2 bg-black text-white rounded-full -rotate-45"></i></a>
+      </div>
+    </footer>
 </body>
 </html>
